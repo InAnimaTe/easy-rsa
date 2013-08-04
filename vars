@@ -50,26 +50,26 @@ export PKCS11_PIN="dummy"
 # down TLS negotiation performance
 # as well as the one-time DH parms
 # generation process.
-export KEY_SIZE=1024
+export KEY_SIZE=2048
 
 # In how many days should the root CA key expire?
-export CA_EXPIRE=3650
+export CA_EXPIRE=9999999
 
 # In how many days should certificates expire?
-export KEY_EXPIRE=3650
+export KEY_EXPIRE=9999999
 
 # These are the default values for fields
 # which will be placed in the certificate.
 # Don't leave any of these fields blank.
 export KEY_COUNTRY="US"
-export KEY_PROVINCE="CA"
-export KEY_CITY="SanFrancisco"
-export KEY_ORG="Fort-Funston"
-export KEY_EMAIL="me@myhost.mydomain"
-export KEY_OU="MyOrganizationalUnit"
+export KEY_PROVINCE="US"
+export KEY_CITY="AwesomeCity"
+export KEY_ORG="PrivateOrg"
+export KEY_EMAIL="private@noway.com"
+export KEY_OU="PrivateOU"
 
 # X509 Subject Field
-export KEY_NAME="EasyRSA"
+export KEY_NAME="PrivateKey"
 
 # PKCS11 Smart Card
 # export PKCS11_MODULE_PATH="/usr/lib/changeme.so"
