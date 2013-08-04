@@ -53,10 +53,10 @@ export PKCS11_PIN="dummy"
 export KEY_SIZE=2048
 
 # In how many days should the root CA key expire?
-export CA_EXPIRE=9999999
+#export CA_EXPIRE=3650
 
 # In how many days should certificates expire?
-export KEY_EXPIRE=9999999
+#export KEY_EXPIRE=3650
 
 # These are the default values for fields
 # which will be placed in the certificate.
