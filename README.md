@@ -36,6 +36,11 @@ http://openvpn.net/index.php/open-source/documentation/miscellaneous/77-rsa-key-
 https://wiki.archlinux.org/index.php/Create_a_Public_Key_Infrastructure_Using_the_easy-rsa_Scripts
 
 
+NOTE: For extra protection, one of the following methods are recommended:
+
+1. You can provide the *additional* need (on top of the client key/cert mentioned above) for a username/password. This can be done by using the `auth-user-pass-verify` option which can use something like PAM, RADIUS, etc.. This takes some configuration to get right.
+2. You can also do two-factor OTP authentication (e.g. google auth) in which you use a plugin like https://github.com/evgeny-gridasov/openvpn-otp
+
 
 
 
