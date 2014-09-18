@@ -17,7 +17,7 @@ There are multiple guides out there for doing this. Here is a quick rundown of w
 5. `./build-dh`
 6. `./build-key-server <servername>`, this will create keys for server, **do not set a challenge password**
 7. `./build-key <clientname>`, this will create keys for a client named <clientname>, **do not set a challenge password**
-    > Note that you *only* need the ca.[crt|key] files existent in ./keys to be able to create more client keys!
+    **Note** that you *only* need the ca.[crt|key] files existent in ./keys to be able to create more client keys!
 8. Copy the keys to the appropriate places. All server keys will need to go to /etc/openvpn and server.conf will need to have lines defining these files.
     For a client, you will need the ca.crt and the <clientname>.[crt|key] files.
 9. Additionally, for extra security, it is good idea to apply HMAC auth (tls-auth) using a ta/static.key. 
